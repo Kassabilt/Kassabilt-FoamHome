@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassabilt FoamHome Building Process</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F8F8;
+            /* Light gray background, close to white */
+        }
+
+        .page-section {
+            display: none;
+            /* Hidden by default */
+        }
+
+        .page-section.active {
+            display: block;
+            /* Shown when active */
+        }
+
+        /* No custom CSS for .nav-link or .nav-link.active anymore, all handled by Tailwind */
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <!-- Header/Navigation -->
+    <header class="bg-[#E4002B] text-white p-4 shadow-lg">
+        <div class="container mx-auto max-w-screen-xl flex flex-wrap justify-between items-center py-2 relative">
+            <div class="flex items-center space-x-4">
+                <!-- Kassabilt Logo -->
+                <img src="http://googleusercontent.com/file_content/1" alt="Kassabilt Logo" class="h-14 rounded-lg object-contain">
+                <h1 class="text-4xl font-extrabold tracking-tight">Kassabilt FoamHome</h1>
+            </div>
+            <!-- Menu Button for Dropdown -->
+            <div class="relative">
+                <button id="menu-button" class="bg-[#C00020] hover:bg-[#A0001A] text-white px-6 py-3 rounded-lg shadow-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#C00020] focus:ring-opacity-50 flex items-center">
+                    Menu
+                    <!-- Down arrow icon -->
+                    <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+
+                <!-- Dropdown Menu -->
+                <div id="dropdown-menu"
+                    class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-xl py-2 z-10 hidden border border-gray-200">
+                    <ul class="flex flex-col">
+                        <li><a href="#"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#E4002B] nav-link transition-colors duration-200"
+                                data-page="home">Home</a></li>
+                        <li><a href="#"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#E4002B] nav-link transition-colors duration-200"
+                                data-page="foundation">Foundation</a></li>
+                        <li><a href="#"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#E4002B] nav-link transition-colors duration-200"
+                                data-page="exterior-walls">Exterior Walls</a></li>
+                        <li><a href="#"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#E4002B] nav-link transition-colors duration-200"
+                                data-page="floors-roofs">Floors & Roofs</a></li>
+                        <li><a href="#"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#E4002B] nav-link transition-colors duration-200"
+                                data-page="interior-framing">Interior Framing</a></li>
+                        <li><a href="#"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#E4002B] nav-link transition-colors duration-200"
+                                data-page="liquid-floors">Liquid Applied Floors</a></li>
+                        <li><a href="#"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#E4002B] nav-link transition-colors duration-200"
+                                data-page="hvac-filtration">HVAC & Water Filtration</a></li>
+                        <li><a href="#"
+                                class="block px-4 py-2 text-gray-800 hover:bg-gray-100 hover:text-[#E4002B] nav-link transition-colors duration-200"
+                                data-page="elevator">Residential Elevator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto max-w-screen-xl p-6 flex-grow">
+        <!-- Home Page Section -->
+        <section id="home" class="page-section active bg-white p-10 rounded-xl shadow-xl mb-12 border border-gray-100">
+            <h2 class="text-5xl font-extrabold text-gray-900 mb-8 text-center leading-tight">Welcome to the Future of
+                Home Building</h2>
+            <p class="text-xl text-gray-700 leading-relaxed text-center max-w-4xl mx-auto mb-10">
+                The Kassabilt FoamHome Building Process offers a superior approach to construction by integrating
+                advanced materials and techniques that enhance durability, efficiency, and safety. This innovative
+                method features significant improvements at every stage of home building, from the foundation to the
+                roof, ensuring a healthier and more resilient living environment. Explore our site to learn more about
+                how we build homes that last a lifetime.
+            </p>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#FCEAEA] p-8 rounded-lg shadow-md text-center border border-[#FCEAEA]">
+                    <h3 class="text-2xl font-bold text-[#E4002B] mb-3">Enhanced Durability</h3>
+                    <p class="text-gray-700 text-lg">Built to withstand extreme weather and the test of time with
+                        robust, cutting-edge materials and construction methods.</p>
+                </div>
+                <div class="bg-[#FCEAEA] p-8 rounded-lg shadow-md text-center border border-[#FCEAEA]">
+                    <h3 class="text-2xl font-bold text-[#E4002B] mb-3">Superior Efficiency</h3>
+                    <p class="text-gray-700 text-lg">Experience significantly lower energy bills and a consistently
+                        comfortable indoor climate year-round, thanks to advanced insulation.</p>
+                </div>
+                <div class="bg-[#FCEAEA] p-8 rounded-lg shadow-md text-center border border-[#FCEAEA]">
+                    <h3 class="text-2xl font-bold text-[#E4002B] mb-3">Unmatched Safety</h3>
+                    <p class="text-gray-700 text-lg">Enjoy peace of mind with fire-rated walls, superior structural
+                        integrity, and materials resistant to pests and natural disasters.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Foundation Section -->
+        <section id="foundation" class="page-section bg-white p-10 rounded-xl shadow-xl mb-12 border border-gray-100">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Foundation: Void Boxes & Steel Fiber</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://placehold.co/700x500/E4002B/FFFFFF?text=Void+Boxes+Foundation" alt="Void Boxes Foundation Illustration" class="w-full h-auto rounded-lg shadow-md mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">Void Boxes</h3>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Void boxes in the foundation system significantly reduce the amount of concrete and rebar
+                        needed, leading to more sustainable construction. They accelerate the installation process,
+                        allowing for faster project completion. This system ensures excellent performance, particularly
+                        on expansive or challenging soils, making the build more efficient and adaptable to various site
+                        conditions.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/700x500/1A1A1A/FFFFFF?text=Steel+Fiber+Reinforcement" alt="Steel Fiber Reinforcement" class="w-full h-auto rounded-lg shadow-md mb-6">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">Steel Fiber</h3>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Steel fibers are seamlessly integrated into the concrete foundation, dramatically improving its
+                        strength, crack resistance, and overall durability. This advanced reinforcement method
+                        eliminates the need for hazardous post-tension cables, contributing to a safer and more robust
+                        foundation for the entire structure. It results in a longer-lasting and more reliable base for
+                        your home.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exterior Walls Section -->
+        <section id="exterior-walls"
+            class="page-section bg-white p-10 rounded-xl shadow-xl mb-12 border border-gray-100">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Exterior Walls: Hercuwall</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/700x500/E4002B/FFFFFF?text=Hercuwall+Exterior+Walls" alt="Hercuwall Exterior" class="w-full h-auto rounded-lg shadow-md mb-6">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        Hercuwall provides superior protection against extreme weather conditions, including high winds
+                        and seismic activity, ensuring your home remains secure. It boasts an impressive 4-hour fire
+                        rating, offering critical safety in emergencies. Furthermore, Hercuwall provides excellent
+                        soundproofing, creating a quieter and more peaceful indoor environment. Most notably, it
+                        significantly lowers energy bills due to its exceptional insulation properties, making your home
+                        incredibly energy-efficient.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 pl-5 text-lg">
+                        <li>Unmatched protection against extreme weather</li>
+                        <li>4-hour fire rating for enhanced safety</li>
+                        <li>Superior soundproofing for a quiet home</li>
+                        <li>Significantly lower energy bills</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floors & Roofs Section -->
+        <section id="floors-roofs" class="page-section bg-white p-10 rounded-xl shadow-xl mb-12 border border-gray-100">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Floors & Roofs: Steel and Concrete Composite
+            </h2>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/700x500/1A1A1A/FFFFFF?text=Composite+Floors+and+Roofs" alt="Composite Floors and Roofs" class="w-full h-auto rounded-lg shadow-md mb-6">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        Our steel and concrete composite floors and roofs revolutionize home design by eliminating
+                        traditional attics and sloped roofs. This innovative approach creates incredibly durable, flat,
+                        and walkable rooftop spaces, transforming unused areas into valuable outdoor living oases. This
+                        system offers enhanced structural integrity, superior sound dampening between floors, and
+                        greater design flexibility, while also reducing potential problems associated with conventional
+                        roofing materials.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 pl-5 text-lg">
+                        <li>Eliminates traditional attics and sloped roofs</li>
+                        <li>Creates durable, walkable rooftop spaces</li>
+                        <li>Enhanced structural integrity and sound dampening</li>
+                        <li>Greater design flexibility</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interior Framing Section -->
+        <section id="interior-framing"
+            class="page-section bg-white p-10 rounded-xl shadow-xl mb-12 border border-gray-100">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Interior Framing: Steel Studs</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/700x500/E4002B/FFFFFF?text=Steel+Stud+Framing" alt="Steel Stud Framing" class="w-full h-auto rounded-lg shadow-md mb-6">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        Our interior steel stud framing offers significant cost savings due to its efficiency and
+                        reduced waste during construction. This method provides increased structural stability, ensuring
+                        walls remain straight and true over time without warping, twisting, or shrinking. Furthermore,
+                        steel is non-combustible and resistant to pests like termites, enhancing the overall safety and
+                        longevity of your home compared to traditional wood framing. It provides a consistent, durable
+                        structure for all interior walls.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 pl-5 text-lg">
+                        <li>Significant cost savings</li>
+                        <li>Increased structural stability</li>
+                        <li>Enhanced safety (non-combustible, pest-resistant)</li>
+                        <li>No warping, twisting, or shrinking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Liquid Applied Floors Section -->
+        <section id="liquid-floors"
+            class="page-section bg-white p-10 rounded-xl shadow-xl mb-12 border border-gray-100">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Liquid Applied Floors</h2>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/700x500/1A1A1A/FFFFFF?text=Liquid+Applied+Flooring" alt="Liquid Applied Flooring" class="w-full h-auto rounded-lg shadow-md mb-6">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        Our liquid applied floors offer exceptional durability, resisting wear, tear, and spills, making
+                        them ideal for high-traffic areas. They promote superior hygiene by creating a seamless,
+                        non-porous surface that is incredibly easy to clean and inhibits the growth of mold and mildew.
+                        Beyond functionality, these floors provide immense design flexibility, allowing for a wide range
+                        of colors, textures, and finishes to perfectly match your aesthetic preferences, making them
+                        ideal for modern homes seeking both aesthetic appeal and practical benefits.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 pl-5 text-lg">
+                        <li>Exceptional durability and wear resistance</li>
+                        <li>Superior hygiene and easy to clean</li>
+                        <li>Seamless, non-porous surface</li>
+                        <li>Immense design flexibility</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- HVAC & Water Filtration Section -->
+        <section id="hvac-filtration"
+            class="page-section bg-white p-10 rounded-xl shadow-xl mb-12 border border-gray-100">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Advanced HVAC & Water Filtration</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/700x500/E4002B/FFFFFF?text=HVAC+and+Water+Filtration" alt="HVAC and Water Filtration" class="w-full h-auto rounded-lg shadow-md mb-6">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        This integrated system ensures a healthier indoor environment by providing superior air
+                        purification throughout your entire home, removing allergens, pollutants, and odors. Coupled
+                        with advanced whole-house water filtration, it delivers clean, safe, and great-tasting water
+                        from every tap. This comprehensive approach promotes overall well-being, reduces exposure to
+                        contaminants, and enhances comfort for all occupants, contributing to a truly healthy and
+                        comfortable living space.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 pl-5 text-lg">
+                        <li>Superior whole-house air purification</li>
+                        <li>Advanced whole-house water filtration</li>
+                        <li>Removes allergens, pollutants, and odors</li>
+                        <li>Promotes overall well-being and comfort</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Residential Elevator Section -->
+        <section id="elevator" class="page-section bg-white p-10 rounded-xl shadow-xl mb-12 border border-gray-100">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Private Residential Elevator</h2>
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/700x500/1A1A1A/FFFFFF?text=Residential+Elevator" alt="Residential Elevator" class="w-full h-auto rounded-lg shadow-md mb-6">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        The option of a private residential elevator guarantees lifelong accessibility within your home,
+                        making multi-story living convenient for individuals of all ages and mobility levels. This
+                        feature significantly increases property value, appealing to a broader market and
+                        future-proofing your residence for evolving needs. Beyond practical benefits, it adds a touch of
+                        luxury and sophistication, enhancing the overall living experience and convenience for residents
+                        and guests alike.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 pl-5 text-lg">
+                        <li>Guarantees lifelong accessibility</li>
+                        <li>Significantly increases property value</li>
+                        <li>Future-proofs the residence</li>
+                        <li>Adds luxury and convenience</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A1A1A] text-white p-8 text-center mt-auto shadow-inner">
+        <div class="container mx-auto max-w-screen-xl">
+            <p class="text-lg">&copy; 2024 Kassabilt FoamHome. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Built with innovation and precision.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+            const menuButton = document.getElementById('menu-button');
+            const dropdownMenu = document.getElementById('dropdown-menu');
+
+            // Function to show a specific page
+            function showPage(pageId) {
+                pageSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(pageId).classList.add('active');
+
+                // Update active state for dropdown links
+                navLinks.forEach(link => {
+                    link.classList.remove('font-bold', 'text-[#E4002B]'); // Remove active styling
+                });
+                const activeLink = document.querySelector(`.nav-link[data-page="${pageId}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('font-bold', 'text-[#E4002B]'); // Add active styling
+                }
+
+                // Close dropdown after selecting a page
+                dropdownMenu.classList.add('hidden');
+            }
+
+            // Toggle dropdown visibility
+            menuButton.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener('click', (event) => {
+                if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+
+            // Add click event listeners to navigation links (within dropdown)
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    const pageId = e.target.dataset.page;
+                    showPage(pageId);
+                });
+            });
+
+            // Optionally, show a specific page based on URL hash on load
+            const initialPage = window.location.hash.substring(1);
+            if (initialPage && document.getElementById(initialPage)) {
+                showPage(initialPage);
+            } else {
+                showPage('home'); // Default to home page
+            }
+        });
+    </script>
+</body>
+
+</html>
